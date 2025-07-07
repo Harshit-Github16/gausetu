@@ -1,23 +1,28 @@
 {
-  "name": "gausetu",
+  "name": "harshit_s_application",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev -p 3000",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next dev -p 3000",
+    "format": "prettier --write \"src/**/*.{js,jsx,css,md,json}\"",
+    "serve": "next start"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.5"
+    "next": "14.2.0",
+    "react": "18.2.0",
+    "prop-types": "^15.8.1",
+    "react-dom": "18.2.0",
+    "@dhiwise/component-tagger": "^1.0.10",
+    "@tailwindcss/typography": "^0.5.16",
+    "recharts": "^2.15.2"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.5",
-    "@eslint/eslintrc": "^3"
+    "autoprefixer": "10.4.2",
+    "postcss": "8.4.8",
+    "prettier": "^3.5.3",
+    "@netlify/plugin-nextjs": "^5.11.1",
+    "tailwindcss": "3.4.6"
   }
 }
